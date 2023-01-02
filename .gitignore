@@ -2,6 +2,7 @@
 
 #api
 dist
+.nyc_output
 
 # dependencies
 node_modules
@@ -32,6 +33,7 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 .env.dev
+.env.test
 .env
 
 # turbo
