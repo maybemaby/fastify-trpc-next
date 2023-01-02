@@ -17,6 +17,7 @@ importers:
       '@fastify/cors': ^8.2.0
       '@fastify/helmet': ^10.1.0
       '@fastify/sensible': ^5.2.0
+      '@trpc/server': ^10.7.0
       '@types/node': ^17.0.12
       '@typescript-eslint/eslint-plugin': ^5.47.1
       '@typescript-eslint/parser': ^5.47.1
@@ -26,6 +27,8 @@ importers:
       fastify: ^4.11.0
       fastify-plugin: ^4.4.0
       pino-pretty: ^9.1.1
+      schema: '*'
+      superjson: ^1.12.1
       ts-node-dev: ^2.0.0
       tsconfig: workspace:*
       typescript: ^4.9.4
@@ -34,9 +37,12 @@ importers:
       '@fastify/cors': 8.2.0
       '@fastify/helmet': 10.1.0
       '@fastify/sensible': 5.2.0
+      '@trpc/server': 10.7.0
       dotenv-cli: 6.0.0
       fastify: 4.11.0
       fastify-plugin: 4.4.0
+      schema: link:../../packages/schema
+      superjson: 1.12.1
       typescript: 4.9.4
       zod: 3.20.2
     devDependencies:
@@ -104,6 +110,17 @@ importers:
       eslint: 7.32.0
       eslint-config-turbo: 0.0.7_eslint@7.32.0
     devDependencies:
+      typescript: 4.9.4
+
+  packages/schema:
+    specifiers:
+      tsconfig: workspace:*
+      typescript: ^4.9.4
+      zod: ^3.20.2
+    dependencies:
+      zod: 3.20.2
+    devDependencies:
+      tsconfig: link:../tsconfig
       typescript: 4.9.4
 
   packages/tsconfig:
@@ -640,6 +657,10 @@ packages:
       tslib: 2.4.1
     dev: false
 
+  /@trpc/server/10.7.0:
+    resolution: {integrity: sha512-kFhlqhzZt5PwVRRDci8oJKMMFGjjq9189stT6bvS9xuuLjRzzwhMShRi99sm/jqhdjWmlXyO3Ncx0rnghUvH+w==}
+    dev: false
+
   /@tsconfig/node10/1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
     dev: true
@@ -1164,6 +1185,13 @@ packages:
   /cookie/0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
     engines: {node: '>= 0.6'}
+    dev: false
+
+  /copy-anything/3.0.3:
+    resolution: {integrity: sha512-fpW2W/BqEzqPp29QS+MwwfisHCQZtiduTe/m8idFo0xbti9fIZ2WVhAsCv4ggFVH3AgCkVdpoOCtQC6gBrdhjw==}
+    engines: {node: '>=12.13'}
+    dependencies:
+      is-what: 4.1.8
     dev: false
 
   /core-js-pure/3.27.1:
@@ -2238,6 +2266,11 @@ packages:
       call-bind: 1.0.2
     dev: false
 
+  /is-what/4.1.8:
+    resolution: {integrity: sha512-yq8gMao5upkPoGEU9LsB2P+K3Kt8Q3fQFCGyNCWOAnJAMzEXVV9drYb0TXr42TTliLLhKIBvulgAXgtLLnwzGA==}
+    engines: {node: '>=12.13'}
+    dev: false
+
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
@@ -3048,6 +3081,13 @@ packages:
       '@babel/core': 7.20.7
       client-only: 0.0.1
       react: 18.2.0
+    dev: false
+
+  /superjson/1.12.1:
+    resolution: {integrity: sha512-HMTj43zvwW5bD+JCZCvFf4DkZQCmiLTen4C+W1Xogj0SPOpnhxsriogM04QmBVGH5b3kcIIOr6FqQ/aoIDx7TQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      copy-anything: 3.0.3
     dev: false
 
   /supports-color/5.5.0:

@@ -1,0 +1,19 @@
+{
+  "name": "schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "maybemaby",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "zod": "^3.20.2"
+  }
+}
