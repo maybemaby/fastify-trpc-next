@@ -1,7 +1,9 @@
 {
   "$schema": "https://turbo.build/schema.json",
+
   "pipeline": {
     "build": {
+      "env": ["VERCEL_URL", "RENDER_INTERNAL_HOSTNAME", "NEXT_PUBLIC_PORT"],
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
