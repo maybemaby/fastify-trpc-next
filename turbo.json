@@ -12,6 +12,11 @@
     },
     "dev": {
       "cache": false
-    }
+    },
+    "start": {
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "test:e2e": {}
   }
 }

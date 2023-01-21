@@ -46,3 +46,11 @@ To develop all apps and packages, run the following command:
 ```
 pnpm run dev
 ```
+### Test:E2E
+
+To run E2E tests with cypress and the api live
+
+```
+pnpm -w run start
+pnpm -w run test:e2e
+```

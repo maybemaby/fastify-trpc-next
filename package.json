@@ -10,7 +10,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel --force",
     "lint": "turbo run lint --filter=!schema --filter=!ui",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test:e2e": "turbo run test:e2e",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start": "turbo run start"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
