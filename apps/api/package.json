@@ -7,7 +7,8 @@
     "build": "tsc",
     "dev": "dotenv -e .env.dev -- ts-node-dev ./src/server.ts",
     "lint": "tsc --noEmit && TIMING=1 eslint \"src/**/*.ts*\"",
-    "test": "dotenv -e .env.test -- tap src/**/*.test.ts --ts --no-check-coverage"
+    "test": "dotenv -e .env.test -- tap src/**/*.test.ts --ts --no-check-coverage",
+    "start": "dotenv -e .env -- node ./dist/server.js"
   },
   "keywords": [],
   "author": "maybemaby",
