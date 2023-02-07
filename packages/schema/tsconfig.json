@@ -14,5 +14,6 @@
     "composite": true
   },
   "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"],
   "extends": "tsconfig/base.json"
 }
