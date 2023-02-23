@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint *.ts*",
-    "test": "jest --watch"
+    "test": "jest",
+    "test:w": "jest --watch"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

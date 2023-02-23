@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "test": "jest --watch",
+    "test": "jest --passWithNoTests",
+    "test:w": "jest --watch",
     "test:e2e": "cypress run -b chrome --headed",
     "cypress:open": "cypress open",
     "build:analyze": "ANALYZE=true next build",

@@ -18,6 +18,7 @@
       "persistent": true,
       "dependsOn": ["^build"]
     },
+    "test": {},
     "test:e2e": {}
   }
 }
