@@ -1,6 +1,7 @@
 {
   "name": "fastify-trpc-next",
   "version": "0.0.0",
+  "repository": "https://github.com/maybemaby/fastify-trpc-next",
   "private": true,
   "workspaces": [
     "apps/*",

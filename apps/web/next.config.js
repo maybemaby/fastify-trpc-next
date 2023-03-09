@@ -2,9 +2,7 @@
 const config = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    transpilePackages: ["ui"],
-  },
+  transpilePackages: ["ui"],
   typescript: {
     ignoreBuildErrors: true,
   },
