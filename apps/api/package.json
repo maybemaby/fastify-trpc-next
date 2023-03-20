@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "^5.47.1",
     "eslint": "^8.31.0",
     "eslint-config-custom-server": "*",
-    "pino-pretty": "^9.2.0",
+    "pino-pretty": "^10.0.0",
     "tap": "^16.3.4",
     "ts-node-dev": "^2.0.0",
     "tsconfig": "workspace:*"
