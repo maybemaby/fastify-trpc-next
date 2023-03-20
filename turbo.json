@@ -18,7 +18,14 @@
       "persistent": true,
       "dependsOn": ["^build"]
     },
-    "test": {},
+    "test": {
+      "inputs": [
+        "packages/ui/**/*.tsx",
+        "packages/ui/**/*.ts",
+        "apps/web/components/**/*.tsx",
+        "apps/web/components/**/*.ts"
+      ]
+    },
     "test:e2e": {}
   }
 }

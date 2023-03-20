@@ -6,6 +6,12 @@ Turborepo setup for using:
 - Next.js
 - ESLint
 
+## Getting Started
+```bash
+git clone git@github.com:maybemaby/fastify-trpc-next.git
+pnpm i
+```
+
 ## What's inside?
 
 This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
@@ -35,7 +41,7 @@ This turborepo has some additional tools already setup for you:
 
 To build all apps and packages, run the following command:
 
-```
+```bash
 pnpm run build
 ```
 
@@ -43,14 +49,14 @@ pnpm run build
 
 To develop all apps and packages, run the following command:
 
-```
+```bash
 pnpm run dev
 ```
 ### Test:E2E
 
 To run E2E tests with cypress and the api live
 
-```
+```bash
 pnpm -w run start
 pnpm -w run test:e2e
 ```
