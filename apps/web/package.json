@@ -48,6 +48,6 @@
     "jest-environment-jsdom": "^29.4.2",
     "local-cypress": "^1.2.6",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
+    "typescript": "^5.0.2"
   }
 }
