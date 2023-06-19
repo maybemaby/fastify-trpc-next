@@ -31,7 +31,7 @@
     "@types/tap": "^15.0.8",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
-    "eslint": "^8.31.0",
+    "eslint": "^8.43.0",
     "eslint-config-custom-server": "*",
     "pino-pretty": "^10.0.0",
     "tap": "^16.3.4",
